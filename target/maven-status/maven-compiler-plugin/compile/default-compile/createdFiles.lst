@@ -1,6 +1,0 @@
-model\Pessoa.class
-util\FormatadorUtil.class
-Main.class
-app\Principal.class
-model\Funcionario.class
-service\FuncionarioService.class

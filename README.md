@@ -24,7 +24,6 @@ Dentro de `src/main/` estão as pastas **`app/`**, **`model/`**, **`service/`** 
         └── FuncionarioServiceTest.java
 ```
 
-> **Observação**: os pacotes foram ajustados para `app`, `model`, `service` e `util`. O arquivo `Main.java` fica no pacote **default** e delega a execução para `app.Principal`.
 
 ## Requisitos
 - JDK 17 (temurin 17.0.16 recomendado)
@@ -33,6 +32,7 @@ Dentro de `src/main/` estão as pastas **`app/`**, **`model/`**, **`service/`** 
 
 ## Como rodar
 ```bash
+
 # compilar e executar testes
 mvn clean test
 
@@ -42,14 +42,6 @@ mvn clean package
 # executar o programa (classe Main no pacote default)
 java -cp target/classes Main
 ```
-
-## O que foi alterado
-- Removido o nível `src/main/java` e configurado o Maven para **compilar a partir de `src/`**, excluindo `src/test/` dos fontes de produção.
-- Ajustados **packages** e **imports** de todas as classes para `app`, `model`, `service` e `util`.
-- Movido o teste `FuncionarioServiceTest.java` para `src/test/` (arquivo diretamente na pasta, como solicitado).
-- Criado `src/Main.java` que chama `app.Principal` (ponto de entrada).
-
----
 
 # Desafio Projedata – Gestão de Funcionários
 
@@ -61,33 +53,6 @@ projeto foi estruturado para ser aberto diretamente no **IntelliJ IDEA
 Community Edition 2025.2** usando o **JDK Temurin 17.0.16** e o
 **sistema de build Maven**.
 
-## Estrutura de pastas
-
-O projeto segue a convenção padrão de um projeto Maven:
-
-```
-test_projedata/
-├── .idea/               # diretório gerado pelo IntelliJ (mantido vazio aqui)
-├── pom.xml              # definição do projeto Maven
-├── README.md            # este arquivo com instruções de uso
-└── src/
-    ├── main/
-    │   └── java/
-    │       └── br/com/empresa/
-    │           ├── app/
-    │           │   └── Principal.java
-    │           ├── model/
-    │           │   ├── Funcionario.java
-    │           │   └── Pessoa.java
-    │           ├── service/
-    │           │   └── FuncionarioService.java
-    │           └── util/
-    │               └── FormatadorUtil.java
-    └── test/
-        └── java/
-            └── br/com/empresa/service/
-                └── FuncionarioServiceTest.java
-```
 
 ### Pacotes e classes
 
@@ -146,16 +111,4 @@ test_projedata/
    mvn test
    ```
 
-## Observações
 
-- O diretório `.idea` está incluído apenas como um marcador.  Ao
-  importar o projeto no IntelliJ, essa pasta será povoada com as
-  configurações específicas do seu ambiente.  Ela não contém arquivos
-  relevantes ao código fonte.
-- Todas as operações de manipulação da lista de funcionários utilizam
-  **Streams** e **Lambdas** para ilustrar uma abordagem funcional.
-- As formatações de data (dd/MM/yyyy) e de números (separador de
-  milhares como ponto e decimal como vírgula) estão concentradas em
-  `FormatadorUtil`.
-
-Boa sorte com o desafio e boas práticas de codificação!
