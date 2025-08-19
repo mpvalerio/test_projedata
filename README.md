@@ -1,7 +1,10 @@
 # Desafio Projedata – Gestão de Funcionários (estrutura simplificada)
 
-Projeto reestruturado conforme solicitado, com **pasta `src`** contendo o arquivo `Main.java` e as subpastas `main/` e `test/`.
-Dentro de `src/main/` estão as pastas **`app/`**, **`model/`**, **`service/`** e **`util/`** (sem o nível `java/`).
+Projeto PROJEDATA, autoria de Matheus Perissinotto Messas Valerio e chatGPT 5. O projeto foi desenvolvido utilizando arquitetura de camadas, dividindo-se em quatro módulos principais, como se pode ver na estrutura de diretórios. Essa abordagem tem como objetivo facilitar a manutenção, reduzir riscos de erro em futuras edições e promover maior clareza no código.
+
+Foi utilizado sistemas de comentários, para identificar e explicar as ações em cada classe e método, garantindo que o projeto seja facilmente compreendido e extensível por outros desenvolvedores.
+
+Esse foi o primeiro projeto desenvolvido por mim, utilizando Java. Com a finalidade de obter um bom resultado utilizei o chatGPT como meio para contruir minha concepção (iniciante na programação, curioso e dedicado) de um bom projeto.
 
 ## Estrutura final
 ```
